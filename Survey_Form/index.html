@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Feedback Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1 id="title">Student Feedback Form</h1>
+  <p id="description">Please fill out this short survey to help us improve your learning experience.</p>
+
+  <form id="survey-form">
+
+    <label id="name-label" for="name">Full Name:
+      <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+    </label>
+
+    <label id="email-label" for="email">Email Address:
+      <input type="email" id="email" name="email" required placeholder="example@domain.com" />
+    </label>
+
+    <label id="number-label" for="number">Age:
+      <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age" />
+    </label>
+
+    <label for="dropdown">Current Role:
+      <select id="dropdown" name="role">
+        <option value="">Select your role</option>
+        <option value="student">Student</option>
+        <option value="professional">Professional</option>
+      </select>
+    </label>
+
+    <p>How satisfied are you with our platform?</p>
+    <label class="inline-label"><input type="radio" name="satisfaction" value="very" class="inline" /> Very Satisfied</label>
+    <label class="inline-label"><input type="radio" name="satisfaction" value="somewhat" class="inline" /> Somewhat Satisfied</label>
+    <label class="inline-label"><input type="radio" name="satisfaction" value="not" class="inline" /> Not Satisfied</label>
+
+    <p>What topics are you interested in?</p>
+    <label class="inline-label"><input type="checkbox" value="ai" class="inline" /> AI</label>
+    <label class="inline-label"><input type="checkbox" value="web" class="inline" /> Web Development</label>
+    <label class="inline-label"><input type="checkbox" value="data" class="inline" /> Data Science</label>
+
+    <label for="comments">Any additional comments:
+      <textarea id="comments" name="comments" rows="4" placeholder="Your feedback..."></textarea>
+    </label>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+
+</body>
+</html>
